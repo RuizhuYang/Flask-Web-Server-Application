@@ -309,7 +309,7 @@ def deleteDish(cuisine_id, dish_id):
         flash('Dish Successfully Deleted')
         return redirect(url_for('showDish', cuisine_id=cuisine_id))
     else:
-        return render_template('deleteDish.html', dish=dishToDelete)
+        return render_template('deletedish.html', dish=dishToDelete)
 
 # create a new user to the database
 def createUser(login_session):
